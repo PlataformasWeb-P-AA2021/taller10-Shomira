@@ -1,0 +1,14 @@
+<h2>Listado de Barrios de Loja</h3>
+    <h3>Número de barrios {{ numero_barrios }}</h3>
+    
+    {% for b in barrios %}
+    <li type="square">Nombre del barrio: {{b.nombre}}</li>   
+        <ul>
+            <li>Número de viviendas: {{b.num_viviendas}}</li>
+            <li>Número de parques: {{b.num_parques}}</li>
+            <li>Número de edificios: {{b.num_edificios}}</li>
+            <li>Parroquia a la que pertenece: {{b.parroquia}}</li>
+        </ul>
+    <hr>
+    {% endfor %}
+    
